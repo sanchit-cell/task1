@@ -5,7 +5,7 @@ const PageList = ({ onPageSelect }) => {
   const [pages, setPages] = useState([]);
 
   useEffect(() => {
-    axios.get('http://backend/api/pages')
+    axios.get('https://task1-backend-chw7.onrender.com/api/pages')
       .then(response => {
         setPages(response.data.data);
       });
