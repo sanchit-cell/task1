@@ -7,7 +7,7 @@ const PageInsights = ({ pageId }) => {
   const [until, setUntil] = useState('');
 
   const fetchInsights = () => {
-    axios.get(`http://backend/api/page-insights/${pageId}?since=${since}&until=${until}`)
+    axios.get(`https://task1-backend-chw7.onrender.com/api/page-insights/${pageId}?since=${since}&until=${until}`)
       .then(response => {
         if (response.data.data.length > 0) {
           // Process and display insights data
