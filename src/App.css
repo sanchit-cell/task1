@@ -1,0 +1,89 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+  background-color: #f0f2f5;
+  
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.login-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4267B2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: pulse 1.5s infinite;
+}
+
+.login-button:hover {
+  background-color: #365899;
+  transform: translateY(-5px);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+img {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+a {
+  display: block;
+  margin: 20px 0;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page-list,
+.page-insights {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-insights h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.page-insights p {
+  font-size: 16px;
+  color: #666;
+}
