@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const response = await axios.get('http://backend/api/current_user');
+      const response = await axios.get('https://task1-backend-chw7.onrender.com/api/current_user');
       setUser(response.data || false);
       console.log(response.data)
     };
@@ -24,13 +24,13 @@ const App = () => {
     if (user === null) {
       return <div>Loading...</div>;
     } else if (user === false) {
-      return <a className="login-button" href="http://backend/auth/facebook">Login with Facebook</a>;
+      return <a className="login-button" href="https://task1-backend-chw7.onrender.com/auth/facebook">Login with Facebook</a>;
     } else {
       return (
         <div>
           <h1>Welcome, {user.name}</h1>
           <img src={user.picture} alt="Profile" />
-          <a href="http://backend/api/logout">Logout</a>
+          <a href="https://task1-backend-chw7.onrender.com/api/logout">Logout</a>
           <PageList onPageSelect={setSelectedPageId} />
           {selectedPageId && <PageInsights pageId={selectedPageId} />}
         </div>
