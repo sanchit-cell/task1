@@ -4,7 +4,7 @@ import PageList from './PageList';
 import PageInsights from './PageInsights';
 import './App.css';
 
-axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = 'include';
 
 const App = () => {
   const [user, setUser] = useState(false);
